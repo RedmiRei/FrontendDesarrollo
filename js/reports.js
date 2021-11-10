@@ -1,5 +1,5 @@
 var urlRest = 'http://140.238.155.247:8080/api/Reservation/';
-var urlRest = 'http://localhost:8080/api/Reservation/';
+/* var urlRest = 'http://localhost:8080/api/Reservation/'; */
 
 function visualizeInfByStatus() {
     console.log("test");

@@ -1,5 +1,10 @@
 var urlRest = 'http://140.238.155.247:8080/api/Message/';
-var urlRest = 'http://localhost:8080/api/Message/';
+var urlClient = "http://140.238.155.247:8080/api/Client/all";
+var urlCabin = "http://140.238.155.247:8080/api/Cabin/all";
+
+/* var urlRest = 'http://localhost:8080/api/Message/'; 
+var urlClient = "http://localhost:8080/api/Client/all";
+var urlCabin "http://localhost:8080/api/Cabin/all"; */
 
 $(document).ready(function () {
   visualizeInf();
@@ -195,8 +200,7 @@ function validateFields() {
 function selectIdClient(){
   console.log("Se esta ejecutando")
   $.ajax({
-      url: "http://140.238.155.247:8080/api/Client/all",
-      url: "http://localhost:8080/api/Client/all",
+      url: urlClient,
       type: 'GET',
         datatype: 'JSON',
       success:function(respuesta){
@@ -214,8 +218,7 @@ function selectIdClient(){
 function selectIdCabin(){
   console.log("Se esta ejecutando")
   $.ajax({
-      url: "http://140.238.155.247:8080/api/Cabin/all",
-      url: "http://localhost:8080/api/Cabin/all",
+      url: urlCabin,
       type: 'GET',
         datatype: 'JSON',
       success:function(respuesta){

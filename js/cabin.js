@@ -1,5 +1,8 @@
 var urlRest = 'http://140.238.155.247:8080/api/Cabin/';
-var urlRest = 'http://localhost:8080/api/Cabin/';
+var urlCategory = "http://140.238.155.247:8080/api/Category/all";
+
+/* var urlRest = 'http://localhost:8080/api/Cabin/'; 
+var urlCategory = "http://localhost:8080/api/Category/all"; */
 
 $(document).ready(function () {
   visualizeInf();
@@ -217,8 +220,7 @@ function validateFields() {
 function selectIdCategory(){
     console.log("Se esta ejecutando")
     $.ajax({
-        url: "http://140.238.155.247:8080/api/Category/all",
-        url: "http://localhost:8080/api/Category/all",
+        url: urlCategory,
         type: 'GET',
         datatype: 'JSON',
         success:function(respuesta){
