@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <button class="agregar">Agregar</button>
+    <p type="Identification"><input type="number" id="id"></input></p>
+    <p type="Message Text">
+        <textarea type="text" id="messagetext" cols="0" rows="2"></textarea>
+    </p>
+    <table class="table table-bordered" id="tableMessage">
+    </table>
+</body>
+
+</html>
+
+<script>
+    $('.agregar').click(function (event) {
+        for (var i = 0; i < 2; i++) {
+            $('#tableMessage').append($('<tr>')
+                // notese que no cerrramos el append , estamos
+                // añadiendo al tr
+                .append('<td> Matricula ' + i + '</td>')
+                .append('<td> Grupo ' + i + '</td>')
+                /* .append('<td> Materia ' + i + '</td>')
+                .append('<td> Unidad ' + i + '</td>')
+                .append('<td> Calificacion ' + i + '</td>') */
+                .append('<td> <button type="button" class="actualizar">Calificar</button></td>')
+                .append('</tr>')
+            );//cerramos el append a la tabla
+        }
+    });
+
+    $('#tableMessage').on('click', '.actualizar', function (event) {
+        //Primera fila
+        /* console.log($(this).parents('tr').find('td:first-child').text()); */
+        //todos las columnas de la fila  
+        /* console.log("Columnas de la Fila"); */
+/*         $.each($(this).parents('tr'), function (index, val) {
+            console.log($(val).text());
+        });
+        alert(); */
+
+        var elementosTD = e.srcElement.parentElement.getElementsByTagName("td");
+
+        // recorremos cada uno de los elementos del array de elementos <td>
+        for (let i = 0; i < elementosTD.length; i++) {
+
+            // obtenemos cada uno de los valores y los ponemos en la variable "valores"
+            var valores1 = elementosTD[0].innerHTML + "\n";
+            var valores2 = elementosTD[1].innerHTML + "\n";
+            var valores3 = elementosTD[2].innerHTML + "\n";
+        }
+
+        alert(valores1);
+    });
+</script>

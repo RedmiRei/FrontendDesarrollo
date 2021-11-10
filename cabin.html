@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Cabin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/cabin.js"></script>
+  <link rel="stylesheet" media="all" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="home.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="form1" style="left: 0px;">
+    <div class="form animate__animated animate__fadeIn">
+
+      <a class="atras" href="index.html">
+        <i class="fas fa-arrow-circle-left"></i>
+      </a>
+
+      <h2>CABIN FORM</h2>
+
+      <pre>NAME</pre>
+      <input type="text" id="name"></input>
+
+      <pre>BRAND</pre>
+      <input type="text" id="brand"></input>
+
+      <pre>ROOMS   CATEGORY</pre>
+      <input type="number" id="rooms" style="width: 25%;"></input>
+      <select id="category_id" style="width: 73%;">
+        <option value="">Choose an option</option>
+      </select>
+
+      <script type="text/javascript">
+        window.onload = selectIdCategory();
+      </script>
+
+      <pre>DESCRIPTION</pre>
+      <textarea type="text" id="description" style="height: 80px;" cols="0" rows="10"></textarea>
+
+      <button class="save" onclick="saveInf()">
+        <i class="fas fa-cloud-upload-alt"></i> Save
+      </button>
+      <!-- <button class="update" onclick="updateInf()">
+        <i class="fas fa-edit"></i> Update
+      </button> -->
+      <button class="clean" id="limpiar">
+        <i class="fas fa-eraser"></i> Clean
+      </button>
+
+    </div>
+
+    <div class="consulta animate__animated animate__fadeIn">
+
+      <div class="resultado" id="resultado"></div>
+
+      <input type="text" id="search" placeholder="  Live search"></input>
+      <button class="visualize" onclick="visualizeInf()">
+        <i class="fas fa-eye"></i> Visualize
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

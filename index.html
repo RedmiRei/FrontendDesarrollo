@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title class="fas fa-home">Reto 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <!--  <link rel="stylesheet" media="all" href="css/style.css" /> -->
+  <link rel="stylesheet" media="all" href="css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="home.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Simulate a smartphone / tablet -->
+  <div class="slideshow animate__animated animate__fadeIn">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <h2 class="hdos animate__animated animate__bounceIn">SECOND CHALLENGE<i href="javascript:void(0);" onclick="myFunction()" class="fa fa-bars"></i></h2>
+      <div id="myLinks" >
+        <a href="cabin.html" class="ac animate__animated animate__fadeInLeft">Cabin<i class="fas fa-home"></i></a>
+
+        <a href="client.html" class="acl animate__animated animate__fadeInLeft">Client<i class="fas fa-users"></i></a>
+
+        <a href="message.html" class="am animate__animated animate__fadeInLeft">Message<i class="fas fa-comment"></i></a>
+
+        <a href="category.html" class="acat animate__animated animate__fadeInLeft">Category<i class="fas fa-project-diagram"></i> </a>
+
+        <a href="reservation.html" class="ar animate__animated animate__fadeInLeft">Reservation<i class="fas fa-clipboard-list"></i></a>
+
+        <a href="reports.html" class="are animate__animated animate__fadeInLeft">Reports<i class="fas fa-project-diagram"></i> </a>
+      </div>
+
+    </div>
+    
+
+    <div class="cont" style="padding-left:16px">
+      
+      <h3>Vertical Mobile Navbar</h3>
+      <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+      <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+    </div>
+    <div>
+      <img src="img/c7.png" alt="" style="height: 220px; width: 100%;">
+    </div>
+    <!-- End smartphone / tablet look -->
+  </div>
+  <!--   <div class="slideshow animate__animated animate__fadeIn">
+    
+    <h2 class="hdos animate__animated animate__bounceIn">SECOND CHALLENGE</h2>
+
+    <div>
+      <button class="ccm" onclick="location.href='message.html'"><i class="fas fa-comment"></i> Message</button>
+      <button class="ccm" onclick="location.href='cabin.html'"><i class="fas fa-home"></i> Cabin</button>
+      <button class="ccm" onclick="location.href='client.html'"><i class="fas fa-users"></i> Client</button>
+    </div>
+    <div>
+      <button class="ccm" onclick="location.href='category.html'"><i class="fas fa-network-wired"></i> Category</button>
+    </div>
+    
+  </div> -->
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

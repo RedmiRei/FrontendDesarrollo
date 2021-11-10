@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Reports</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/reports.js"></script>
+  <link rel="stylesheet" media="all" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="home.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="form1">
+    <div class="form animate__animated animate__fadeIn">
+      <a class="atras" href="index.html"><i class="fas fa-arrow-circle-left"></i></a>
+      <h2>REPORTS FORM</h2>
+        <!-- <h3>REPORT BY TIME RANGE: </h3> -->
+      <br>
+      <pre>START DATE</pre>
+      <input type="date" id="startDate"></input>
+
+      <pre>FINAL DATE</pre>
+      <input type="date" id="devolutionDate"></input>
+        
+      <button class="visualizeReports" onclick="visualizeInfByDate()">
+        <i class="fas fa-calendar-week"></i> Generate Report by Date
+      </button>
+
+      <button class="clean cleanReports" id="limpiar">
+        <i class="fas fa-eraser"></i> Clean
+      </button>
+      
+    </div>
+
+    <div class="consulta animate__animated animate__fadeIn">
+
+      <div class="resultado" id="resultado"></div>
+
+      <button class="visualize" onclick="visualizeInfByStatus()">
+        <i class="fas fa-check-double"></i> Status Report
+      </button>
+      
+      <button class="visualize" onclick="visualizeInfByClient()">
+        <i class="fas fa-user-circle"></i> Client Report
+      </button>
+      
+      <input type="text" id="search" placeholder=" Live search" style="width: 90px;"></input>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
