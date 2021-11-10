@@ -6,9 +6,9 @@ var urlCabin = "http://140.238.155.247:8080/api/Cabin/all";
 var urlClient = "http://localhost:8080/api/Client/all";
 var urlCabin "http://localhost:8080/api/Cabin/all"; */
 
-$(document).ready(function () {
+/* $(document).ready(function () {
   visualizeInf();
-});
+}); */
 
 function visualizeInf() {
   $.ajax({

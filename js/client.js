@@ -1,10 +1,10 @@
 var urlRest = 'http://140.238.155.247:8080/api/Client/';
 /* var urlRest = 'http://localhost:8080/api/Client/'; */
 
-$(document).ready(function () {
+/* $(document).ready(function () {
   visualizeInf();
 });
-
+ */
 function visualizeInf() {
   $.ajax({
     url: urlRest + "all",

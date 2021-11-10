@@ -4,9 +4,9 @@ var urlCategory = "http://140.238.155.247:8080/api/Category/all";
 /* var urlRest = 'http://localhost:8080/api/Cabin/'; 
 var urlCategory = "http://localhost:8080/api/Category/all"; */
 
-$(document).ready(function () {
+/* $(document).ready(function () {
   visualizeInf();
-});
+}); */
 
 function visualizeInf() {
   $.ajax({
